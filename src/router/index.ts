@@ -3,7 +3,7 @@ import Home from '../pages/Home/index.vue'
 import _ from 'lodash'
 
 // alert(process.env.NODE_ENV)
-const mode = _.get(import.meta, 'env.MODE', 'development')
+const mode = _.get(import.meta, 'mode', 'development')
 
 const base = mode === 'development' ? '/' : '/space.harvest/'
 
