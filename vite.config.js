@@ -10,7 +10,7 @@ export default ({ mode }) => {
       alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
     },
     define: {
-      'import.meta.mode': 'production',
+      'import.meta.mode': JSON.stringify(mode),
     },
     base: process.env.NODE_ENV === 'production' ? '/space.harvest/' : './',
   })
