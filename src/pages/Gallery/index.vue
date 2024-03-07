@@ -4,7 +4,7 @@ const images = new Array(100)
   .fill(1)
   .map(
     (num: number, index: number) =>
-      `/images/harvestMoon/harvest-moon-snes-${(num + index + '').padStart(
+      `./images/harvestMoon/harvest-moon-snes-${(num + index + '').padStart(
         3,
         '0'
       )}.png`
