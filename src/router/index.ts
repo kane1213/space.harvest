@@ -6,6 +6,12 @@ import _ from 'lodash'
 const mode = _.get(import.meta, 'env.MODE', 'development')
 
 const base = mode === 'development' ? '/' : '/space.harvest/'
+
+console.log({ base, mode })
+console.log({ base, mode })
+console.log({ base, mode })
+console.log({ base, mode })
+
 const routes = [
   // {
   //   path: '/',
