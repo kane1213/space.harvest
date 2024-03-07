@@ -7,5 +7,5 @@ export default defineConfig({
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
   },
-  base: '/space.harvest/',
+  base: process.env.NODE_ENV === 'production' ? '/space.harvest/' : './',
 })
