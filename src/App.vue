@@ -1,5 +1,29 @@
 <script setup>
 import Layout from '@/components/Layout.vue'
+
+const openAddFlow = () => {
+  // if (isIOS()) {
+  //   // 如果是苹果手机，直接显示浏览器设置指引图
+  //     showAddTipsDialog.value = true
+  // } else {
+
+  // }
+  console.log('test')
+  try {
+    window.deferredPrompt.prompt()
+    window.deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        // showAddToDesktop.value = false
+        localStorage.setItem('addDesktop', true)
+      } else {
+        console.log('User dismissed the A2HS prompt')
+      }
+      window.deferredPrompt = null
+    })
+  } catch {
+    showAddTipsDialog.value = true
+  }
+}
 </script>
 
 <template>
