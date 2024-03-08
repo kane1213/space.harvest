@@ -1,6 +1,6 @@
 <script setup>
 import Layout from '@/components/Layout.vue'
-
+import { ref } from 'vue'
 const openAddFlow = () => {
   // if (isIOS()) {
   //   // 如果是苹果手机，直接显示浏览器设置指引图
@@ -8,6 +8,7 @@ const openAddFlow = () => {
   // } else {
 
   // }
+  const showAddTipsDialog = ref(false)
   console.log('test')
   try {
     window.deferredPrompt.prompt()
@@ -24,6 +25,7 @@ const openAddFlow = () => {
     showAddTipsDialog.value = true
   }
 }
+openAddFlow()
 </script>
 
 <template>
