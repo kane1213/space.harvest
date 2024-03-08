@@ -4,6 +4,11 @@ import router from './router'
 import './style.css'
 import App from './App.vue'
 
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault()
+  window.deferredPrompt = e
+})
+
 const pinia = createPinia()
 const app = createApp(App)
 
