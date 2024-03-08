@@ -21,16 +21,6 @@ export default ({ mode }) => {
           // })),
           icons: [
             {
-              src: '/space.harvest/icons/icon-100.png',
-              type: 'image/png',
-              sizes: '100x100',
-            },
-            {
-              src: '/space.harvest/icons/icon-125.png',
-              type: 'image/png',
-              sizes: '125x125',
-            },
-            {
               src: '/space.harvest/icons/icon-150.png',
               type: 'image/png',
               sizes: '150x150',
