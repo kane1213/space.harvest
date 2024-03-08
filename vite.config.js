@@ -20,7 +20,7 @@ export default ({ mode }) => {
             type: 'image/png',
           })),
         },
-        registerType: 'prompt',
+        registerType: 'autoUpdate',
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}'], // .{js,css,html}', '**/*.{jpg,jpeg,png,gif}
           runtimeCaching: [
