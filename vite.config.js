@@ -21,27 +21,27 @@ export default ({ mode }) => {
           // })),
           icons: [
             {
-              src: '/icons/icon-100.png',
+              src: '/space.harvest/icons/icon-100.png',
               type: 'image/png',
               sizes: '100x100',
             },
             {
-              src: '/icons/icon-125.png',
+              src: '/space.harvest/icons/icon-125.png',
               type: 'image/png',
               sizes: '125x125',
             },
             {
-              src: '/icons/icon-150.png',
+              src: '/space.harvest/icons/icon-150.png',
               type: 'image/png',
               sizes: '150x150',
             },
             {
-              src: '/icons/icon-200.png',
+              src: '/space.harvest/icons/icon-200.png',
               type: 'image/png',
               sizes: '200x200',
             },
             {
-              src: '/icons/icon-400.png',
+              src: '/space.harvest/icons/icon-400.png',
               type: 'image/png',
               sizes: '400x400',
             },
