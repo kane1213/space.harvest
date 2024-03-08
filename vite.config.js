@@ -10,15 +10,42 @@ export default ({ mode }) => {
       vue(),
       VitePWA({
         manifest: {
-          name: 'Space Harvest',
-          short_name: 'S.Harvest',
+          name: 'Space Harvest2',
+          short_name: 'S.Harvest2',
           description: 'A simple game made with Vue 3 and Vite.',
           theme_color: '#ffffff',
-          icons: [100, 125, 150, 200, 400].map((size) => ({
-            src: `/public/icons/icon-${size}.png`,
-            size: `${size}x${size}`,
-            type: 'image/png',
-          })),
+          // icons: [100, 125, 150, 200, 400].map((size) => ({
+          //   src: `/public/icons/icon-${size}.png`,
+          //   size: `${size}x${size}`,
+          //   type: 'image/png',
+          // })),
+          icons: [
+            {
+              src: '/icons/icon-100.png',
+              type: 'image/png',
+              sizes: '100x100',
+            },
+            {
+              src: '/icons/icon-125.png',
+              type: 'image/png',
+              sizes: '125x125',
+            },
+            {
+              src: '/icons/icon-150.png',
+              type: 'image/png',
+              sizes: '150x150',
+            },
+            {
+              src: '/icons/icon-200.png',
+              type: 'image/png',
+              sizes: '200x200',
+            },
+            {
+              src: '/icons/icon-400.png',
+              type: 'image/png',
+              sizes: '400x400',
+            },
+          ],
         },
         registerType: 'autoUpdate',
         workbox: {
