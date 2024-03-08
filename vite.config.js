@@ -36,13 +36,16 @@ export default ({ mode }) => {
             },
           ],
         },
+        devOptions: {
+          enabled: true,
+        },
       }),
     ],
     resolve: {
       alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
     },
     define: {
-      'import.meta.mode': JSON.stringify(mode),
+      EnvMode: JSON.stringify(mode),
     },
     base: process.env.NODE_ENV === 'production' ? '/space.harvest/' : './',
   })
