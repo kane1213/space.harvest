@@ -15,7 +15,7 @@ export default ({ mode }) => {
           description: 'A simple game made with Vue 3 and Vite.',
           theme_color: '#ffffff',
           icons: [100, 125, 150, 200, 400].map((size) => ({
-            src: `/public/icons/icon-${size}.png`,
+            src: `/icons/icon-${size}.png`,
             size: `${size}x${size}`,
             type: 'image/png',
           })),
