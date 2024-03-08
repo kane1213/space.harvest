@@ -20,9 +20,9 @@ export default ({ mode }) => {
             type: 'image/png',
           })),
         },
-        registerType: 'autoUpdate',
+        registerType: 'prompt',
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg}'], // .{js,css,html}', '**/*.{jpg,jpeg,png,gif}
+          globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}'], // .{js,css,html}', '**/*.{jpg,jpeg,png,gif}
           runtimeCaching: [
             {
               urlPattern: (data) => data.url.pathname.startsWith('/'),
