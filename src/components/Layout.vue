@@ -23,6 +23,12 @@ function navgate(name: string) {
       >
         Gallery
       </div>
+      <div
+        class="mr-2 cursor-pointer select-none"
+        @click.stop="navgate('assets')"
+      >
+        Assets
+      </div>
     </div>
   </div>
   <div class="max-w-[1024px] mx-auto">
