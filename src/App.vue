@@ -9,7 +9,6 @@ const openAddFlow = () => {
 
   // }
   const showAddTipsDialog = ref(false)
-  console.log('test')
   try {
     window.deferredPrompt.prompt()
     window.deferredPrompt.userChoice.then((choiceResult) => {
