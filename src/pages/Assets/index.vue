@@ -3,11 +3,7 @@ import dayjs from 'dayjs'
 import { ref } from 'vue'
 import axios from 'axios'
 
-// const _url =
-//   'https://script.googleusercontent.com/macros/echo?user_content_key=-zYQl_6EDXSJVYvTALQbDS5uCewwRbRNyLWxVcYMGKCG8lUZ0BVexmL9HIfX56gLl9S6d1BmT9GWFTmNyPUm7SKY5zKOGO4um5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJ21HpSMLx3kh-lC6CykUxf-VObydmhP-tAqRNBteJ0xos7RQBZiawpBV1AfldrqgAtF74CfwaLmPBK_Bh0gwMF0qX_qbWVp4w&lib=MT6UTPjUkbaqHdC35MvA4Qr5SQpxNkJR0'
-
-const _url =
-  'https://script.google.com/macros/s/AKfycbzJ9oEko9RT129uDI_hcoo0QybhCiRoA2IKkSk8GNJ5nHu2MII78g02jZdnI7awjojy/exec'
+const _url = ''
 
 const items = ref([])
 ;(() => {
