@@ -3,7 +3,8 @@ import Home from '../pages/Home/index.vue'
 import _ from 'lodash'
 
 const mode = _.get(window, 'EnvMode', 'production')
-const base = mode === 'development' ? '/' : '/space.harvest/'
+// const base = mode === 'development' ? '/' : '/space.harvest/'
+const base = '/'
 const routes = [
   // ...(mode === 'production'
   //   ? {
